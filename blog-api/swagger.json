@@ -11,12 +11,20 @@
     "http"
   ],
   "paths": {
-    "/getHealthCheck": {
+    "/posts": {
       "get": {
         "description": "",
         "responses": {
-          "404": {
-            "description": "Not Found"
+          "default": {
+            "description": ""
+          }
+        }
+      },
+      "post": {
+        "description": "",
+        "responses": {
+          "default": {
+            "description": ""
           }
         }
       }
