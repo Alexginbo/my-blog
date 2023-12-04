@@ -39,10 +39,10 @@
             "schema": {
               "type": "object",
               "properties": {
-                "parentCategory": {
+                "categoryName": {
                   "example": "any"
                 },
-                "categoryName": {
+                "parentCategory": {
                   "example": "any"
                 }
               }
@@ -52,6 +52,9 @@
         "responses": {
           "200": {
             "description": "OK"
+          },
+          "400": {
+            "description": "Bad Request"
           },
           "404": {
             "description": "Not Found"
