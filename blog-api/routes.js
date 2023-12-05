@@ -5,7 +5,7 @@ const authController = require('./controllers/AuthController')
 const categoryController = require('./controllers/CategoryController')
 
 router.get("/posts", postController.getAllPosts)
-router.post("/posts", postController.uploadPost)
+router.post("/upload-post", postController.uploadPost)
 //router.get("/register-admin", authController.register)
 router.post("/create-category", categoryController.createCategory)
 

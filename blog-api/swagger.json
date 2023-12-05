@@ -19,12 +19,40 @@
             "description": ""
           }
         }
-      },
+      }
+    },
+    "/upload-post": {
       "post": {
         "description": "",
+        "parameters": [
+          {
+            "name": "body",
+            "in": "body",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "categories": {
+                  "example": "any"
+                },
+                "postTitle": {
+                  "example": "any"
+                },
+                "postSubtitle": {
+                  "example": "any"
+                },
+                "markdownText": {
+                  "example": "any"
+                }
+              }
+            }
+          }
+        ],
         "responses": {
-          "default": {
-            "description": ""
+          "200": {
+            "description": "OK"
+          },
+          "400": {
+            "description": "Bad Request"
           }
         }
       }
